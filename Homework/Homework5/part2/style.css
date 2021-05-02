@@ -40,7 +40,7 @@ a {
 
 .buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -55,11 +55,8 @@ a {
   text-decoration: none;
   color: #fff;
   padding: 10px 13px;
-  margin: 0 auto;
   background: linear-gradient(90deg, #eb8357 9.07%, #eb5757 87.84%);
   border-radius: 5px;
   display: block;
   transition: 0.3s;
-  max-width: 70%;
-  flex-basis: 1;
 }
