@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="POST">
+        <div>
+            <label >Введите имя: <input type="text" maxlength="30" required></label>
+        </div>
+        <div>
+            <label >Введите телефон: <input type="tel" placeholder="(099)-000-11-11" maxlength="12" required></label>
+        </div>
+        <div>
+            <label >Введите имейл: <input type="email" placeholder="example@mail.com" maxlength="30"></label>
+        </div>
+        <div>
+            <label>Подробнее о заказе: </label>
+                <textarea name="massage" id="" cols="30" rows="10" style="resize: none;" placeholder="Максимальное кол-во символов - 200" maxlength="200"></textarea>
+        </div>
+        <div>
+            <p>Укажите тип сайта:</p>
+            <select name="select" id="select">
+                <option value="одностраничный">одностраничный</option>
+                <option value="многостраничный">многостраничный</option>
+                <option value="интернет магазин">интернет магазин</option>
+                <option value="на Тильда">на Тильда</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <button>Отправить</button>
+        </div>
+    </form>
+</body>
+</html>
