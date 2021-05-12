@@ -2,12 +2,12 @@ User-agent: *
 Allow: aptimaze
 Disallow: /admin/
 Disallow: /avtar/
-Sitemap: site.map.ua/sitemap_html.xml
-Sitemap: site.map.ua/sitemap_images.xml
-Sitemap: site.map.ua/sitemap_video.xml
+Sitemap: https://site.map.ua/sitemap_html.xml
+Sitemap: https://site.map.ua/sitemap_images.xml
+Sitemap: https://site.map.ua/sitemap_video.xml
 
 User-agent: Yandex
-Host: https://t-coffee.com.ua/
 Allow: aptimaze
 Disallow: /admin/
 Disallow: /avtar/
+Host: https://site.com.ua/
