@@ -1,5 +1,5 @@
 User-agent: *
-Allow: aptimaze
+Allow: optimize
 Disallow: /admin/
 Disallow: /avtar/
 Sitemap: https://site.map.ua/sitemap_html.xml
@@ -7,7 +7,7 @@ Sitemap: https://site.map.ua/sitemap_images.xml
 Sitemap: https://site.map.ua/sitemap_video.xml
 
 User-agent: Yandex
-Allow: aptimaze
+Allow: optimize
 Disallow: /admin/
 Disallow: /avtar/
 Host: https://site.com.ua/
