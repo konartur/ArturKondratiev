@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+canvas {
+  display: block;
+}
+
+section {
+  width: 1200px;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  border: 1px solid black;
+  background: linear-gradient(45deg, #30cfd0, #330867);
+  width: 100%;
+}
+
+li a {
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  margin-left: 15px;
+}
+
+.main {
+  background: linear-gradient(45deg, #fddb92, #d1fdff);
+}
+
+.sidebar h1 {
+  font-family: 24px;
+  font-weight: 700;
+}
+
+.sidebar p {
+  padding: 0 15px;
+}
