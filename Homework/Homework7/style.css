@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.main {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.red_color h2 {
+  color: red;
+}
+.boxing p {
+  font-size: 14px;
+}
+.green_color p {
+  font-size: 16px;
+  color: green;
+}
+.boxing h2 {
+  background-color: #ccc;
+}
+p,
+h2 {
+  margin-top: 10px;
+}
+
+img {
+  height: auto;
+  width: 400px;
+}
