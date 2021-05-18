@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 8</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="container">
+        <div class="description">
+          <h1 class="description_title">React</h1>
+          <p class="description_text">
+            Создавать интерактивные пользовательские интерфейсы на React —
+            приятно и просто. Вам достаточно описать, как части интерфейса
+            приложения выглядят в разных состояниях. React будет своевременно их
+            обновлять, когда данные изменяются. Декларативные представления
+            сделают код более предсказуемым и упростят отладку.
+          </p>
+          <p class="description_text">
+            Создавайте инкапсулированные компоненты с собственным состоянием, а
+            затем объединяйте их в сложные пользовательские интерфейсы.
+            Поскольку логика компонента написана на JavaScript, а не содержится
+            в шаблонах, можно с лёгкостью передавать самые разные данные по
+            всему приложению и держать состояние вне DOM.
+          </p>
+          <p class="description_text">
+            Нам не нужно ничего знать про остальную часть вашего
+            технологического стека, поэтому вы можете разрабатывать новую
+            функциональность на React, не изменяя существующий код. React также
+            может работать на сервере, используя Node.js и на мобильных
+            платформах, используя React Native.
+          </p>
+        </div>
+
+        <form action="POST" class="form">
+          <fieldset>
+            <legend class="form_title">Записаться на курс по React</legend>
+            <label>Ваше имя: <input type="text" required /></label>
+            <label
+              >Ваш телефон:
+              <input type="tel" placeholder="(099)-000-00-00" required
+            /></label>
+            <textarea
+              name="massage"
+              id="massage"
+              cols="50"
+              rows="10"
+              maxlength="200"
+              value="Расскажите о себе"
+            ></textarea>
+            <p><input type="submit" value="Отправить" /></p>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
