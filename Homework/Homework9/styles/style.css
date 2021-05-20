@@ -1,0 +1,62 @@
+/* 
+font-family: "barlow_condensedblack_italic";
+font-family: "barlow_condensedbold";
+font-family: "barlow_condensedbold_italic";
+font-family: "barlow_condensedextrabold";
+font-family: "barlow_condensedXBdIt";
+font-family: "barlow_condensedextralight";
+font-family: "barlow_condensedXLtIt";
+font-family: "barlow_condenseditalic";
+font-family: "barlow_condensedlight";
+font-family: "barlow_condensedlight_italic";
+font-family: "barlow_condensedmedium"; 
+1)Добавить каждой ссылке разный шрифт
+2)кастомизировать список(задать градиент, добавить прозрачность и задержку при hover
+3)Добавить каждой ссылке ссылку на svg-картинку
+4)кастомизировать всыплыващее меню (чтобы полноценно разворачивалось)
+5)*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+ul.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul.menu {
+  list-style-type: none;
+}
+
+ul.menu ul.menu__sub {
+  list-style-image: url(../img/st_n.png);
+}
+
+ul.menu li.menu__item {
+  padding: 10px;
+}
+
+ul.menu li.menu__item ul.menu__sub li {
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px solid black;
+}
+
+ul.menu li a.link-item {
+  text-decoration: none;
+  font-family: "barlow_condensedblack";
+  font-size: 24px;
+  color: royalblue;
+}
+
+ul.menu li a.link-item:hover {
+  font-size: 30px;
+  color: lightseagreen;
+}
