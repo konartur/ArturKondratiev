@@ -1,21 +1,3 @@
-/* 
-font-family: "barlow_condensedblack_italic";
-font-family: "barlow_condensedbold";
-font-family: "barlow_condensedbold_italic";
-font-family: "barlow_condensedextrabold";
-font-family: "barlow_condensedXBdIt";
-font-family: "barlow_condensedextralight";
-font-family: "barlow_condensedXLtIt";
-font-family: "barlow_condenseditalic";
-font-family: "barlow_condensedlight";
-font-family: "barlow_condensedlight_italic";
-font-family: "barlow_condensedmedium"; 
-1)Добавить каждой ссылке разный шрифт
-2)кастомизировать список(задать градиент, добавить прозрачность и задержку при hover
-3)Добавить каждой ссылке ссылку на svg-картинку
-4)кастомизировать всыплыващее меню (чтобы полноценно разворачивалось)
-5)*/
-
 * {
   padding: 0;
   margin: 0;
@@ -26,37 +8,113 @@ font-family: "barlow_condensedmedium";
   margin: 0 auto;
 }
 
+.background {
+  background: url("../img/background_2.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  padding-bottom: 56%;
+}
+/* Main menu */
 ul.menu {
   display: flex;
-  justify-content: space-between;
-}
-
-ul.menu {
+  position: relative;
+  justify-content: center;
   list-style-type: none;
 }
-
-ul.menu ul.menu__sub {
-  list-style-image: url(../img/st_n.png);
+ul.menu li {
+  text-align: center;
+  padding-top: 5px;
+  background: linear-gradient(45deg, #fff1eb, #ace0f9);
+}
+ul.menu li.menu__item {
+  width: calc(1170px - 250px);
+  display: block;
+  border: 1px solid darkgrey;
+}
+ul.menu li a {
+  margin-top: 5px;
+  display: block;
+  font-family: "barlow_condensedblack_italic";
+}
+ul.menu li + li a {
+  font-family: "barlow_condensedbold";
 }
 
-ul.menu li.menu__item {
-  padding: 10px;
+ul.menu li + li + li a {
+  font-family: "barlow_condensedXLtIt";
+}
+
+ul.menu li + li + li + li a {
+  font-family: "barlow_condensedextrabold";
+}
+
+ul.menu li + li + li + li a {
+  font-family: "barlow_condensedXBdIt";
+}
+
+ul.menu li + li + li + li + li a {
+  font-family: "barlow_condensedextralight";
+}
+ul.menu li.menu__item a.active {
+  color: green;
+}
+/* Sub-menu */
+ul.menu ul.menu__sub {
+  position: absolute;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  max-height: 0;
+  top: 40px;
+}
+
+ul.menu ul.menu__sub li a {
+  font-family: "barlow_condenseditalic";
+}
+
+ul.menu ul.menu__sub li + li a {
+  font-family: "barlow_condensedlight";
+}
+
+ul.menu ul.menu__sub li + li + li a {
+  font-family: "barlow_condensedlight_italic";
+}
+
+ul.menu ul.menu__sub li + li + li + li a {
+  font-family: "barlow_condensedmedium";
+}
+
+ul.menu li + li + li:hover ul.menu__sub {
+  max-height: 300px;
 }
 
 ul.menu li.menu__item ul.menu__sub li {
   padding: 5px;
-  margin: 5px 0;
-  border: 1px solid black;
+  width: 234px;
+  border: 1px solid lightsalmon;
+}
+ul.menu li.menu__item,
+ul.menu li.menu__item ul.menu__sub li {
+  height: 50px;
+  border-radius: 5px;
+}
+
+ul.menu li.menu__item ul.menu__sub li:first-child {
+  margin-top: 10px;
 }
 
 ul.menu li a.link-item {
+  text-align: center;
   text-decoration: none;
-  font-family: "barlow_condensedblack";
   font-size: 24px;
-  color: royalblue;
+  color: darkslateblue;
 }
 
 ul.menu li a.link-item:hover {
-  font-size: 30px;
+  font-size: 28px;
   color: lightseagreen;
+}
+
+ul.menu li.menu__item ul.menu__sub li {
+  color: red;
 }
