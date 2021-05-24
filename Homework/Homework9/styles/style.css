@@ -63,7 +63,7 @@ ul.menu li.menu__item a.active {
 ul.menu ul.menu__sub {
   position: absolute;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   max-height: 0;
   top: 40px;
 }
