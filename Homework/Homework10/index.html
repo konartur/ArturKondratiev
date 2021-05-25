@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal Window</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="Fonts/stylesheet.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="modal">
+        <h2 class="modal__title">Ваш вопрос</h2>
+        <span class="modal__span"><a href="#">x</a></span>
+        <form action="POST" class="modal__form">
+          <input type="text" class="form__name" placeholder="Имя" autofocus />
+          <input type="text" class="form__email" placeholder="E-mail" />
+          <input
+            type="textarea"
+            class="form__message"
+            placeholder="Комментарий"
+          />
+          <input type="submit" class="form__button" value="Заказать" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
