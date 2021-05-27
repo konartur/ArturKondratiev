@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.header,
+.main {
+  width: 1170px;
+  margin: 0 auto;
+}
+.header__img,
+.main__img {
+  float: left;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: 247px;
+}
+
+.clear {
+  clear: both;
+}
+
+.main__paragraph {
+  font-size: 24px;
+  color: #fff;
+  text-align: justify;
+  text-indent: 25px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
