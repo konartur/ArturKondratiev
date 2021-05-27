@@ -6,11 +6,11 @@
 }
 
 .background {
-  position: relative;
+  position: fixed;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 999;
   width: 100%;
-  padding-bottom: 60%;
+  height: 100%;
 }
 
 .modal {
@@ -34,18 +34,19 @@
   color: rgb(126, 4, 4);
 }
 
-.modal__span a {
+.modal__span {
   position: absolute;
   top: 10px;
   right: 15px;
   z-index: 99999;
   text-decoration: none;
   color: rgb(126, 4, 4);
-  font-size: 30px;
-  font-weight: 700;
-}
-.modal__span a:hover {
   font-size: 35px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.modal__span:hover {
+  color: #fff;
 }
 
 .form__name,
@@ -55,12 +56,11 @@
   display: block;
   color: lightslategray;
   font-size: 24px;
-  padding-left: 15px;
+  padding: 15px;
   border: none;
-  margin-bottom: 25px;
-  margin-left: 10%;
-  width: 80%;
-  height: 50px;
+  margin: 20px;
+  width: 90%;
+  border: 1px solid transparent;
 }
 .modal__form input:hover {
   border: 1px solid rgb(126, 4, 4);
@@ -68,14 +68,13 @@
 .modal__form input[type="text"]:focus,
 .modal__form input[type="textarea"]:focus {
   outline: none;
-  border: 2px solid rgb(126, 4, 4);
+  border: 1px solid rgb(126, 4, 4);
 }
 
 .form__button {
   text-decoration: none;
   color: white;
   background-color: rgb(126, 4, 4);
-  padding: 0;
   text-align: center;
   border-radius: 5px;
 }
