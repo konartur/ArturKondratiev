@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  background: url(../img/background_LA.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header__title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 50px;
+  padding: 25px 0;
+}
+
+.header__description {
+  font-size: 24px;
+  text-align: justify;
+  color: rgb(14, 34, 6);
+  padding-bottom: 15px;
+  text-indent: 15px;
+}
+
+.main__title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(214, 192, 27);
+  padding: 25px 0;
+}
+
+.main__list {
+  list-style-type: disc;
+}
+
+ul.main__list li.list__item,
+.main__content h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(72, 72, 169);
+  padding: 15px 0;
+}
+
+ul.main__list li span,
+.main__content h3 span {
+  font-size: 30px;
+  font-weight: 700;
+  color: green;
+}
+
+.main__content {
+  border-bottom: 2px solid rgb(46, 2, 2);
+}
+
+.main__content h3 {
+  text-align: center;
+}
+
+.main__content img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
