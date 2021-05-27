@@ -14,9 +14,10 @@
 }
 
 img {
-  max-width: 100%;
+  max-width: 390px;
   width: auto;
-  height: 247px;
+  height: 272px;
+  display: block;
 }
 
 .clear {
