@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #ccc;
+  padding-top: 20px;
+}
+
+.logo {
+  width: 200px;
+}
+
+.header-contact {
+  float: right;
+}
+
+.header-contact a {
+  display: block;
+  text-decoration: none;
+  line-height: 19px;
+  color: rgb(16, 1, 143);
+}
+
+.header-contact a:hover {
+  text-decoration: underline;
+}
+
+.logo,
+.slogon {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.nav {
+  background: rgb(4, 9, 163);
+}
+.nav ul.menu {
+  list-style: none;
+}
+
+.nav ul.menu li {
+  display: inline-block;
+  position: relative;
+}
+
+.nav ul.menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.nav ul.menu li a:hover {
+  background: rgb(5, 93, 151);
+}
+
+.nav ul.menu li ul.sub-menu {
+  list-style: none;
+  display: none;
+  position: absolute;
+  z-index: 2;
+  padding: 10px 0;
+  top: 45px;
+  left: 0;
+  background: rgb(148, 170, 6);
+  width: 200px;
+}
+
+.nav ul.menu li ul.sub-menu li {
+  display: block;
+}
+
+.nav ul.menu li ul.sub-menu li a {
+  padding: 3px 20px;
+  width: 100%;
+}
+
+.nav ul.menu li:nth-child(5):hover ul.sub-menu {
+  display: block;
+}
+
+.slider {
+  overflow: hidden;
+}
