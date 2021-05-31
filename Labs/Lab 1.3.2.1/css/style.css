@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  max-width: auto;
+  height: auto;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.header__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32px;
+  color: rgb(76, 1, 197);
+  padding: 20px 0;
+}
+table {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  text-align: center;
+}
+.cell-img {
+  width: 250px;
+  height: auto;
+}
+
+.description {
+  width: 500px;
+}
+
+.table__header,
+.table__footer {
+  font-size: 24px;
+  color: rgb(0, 70, 136);
+  background-color: #ccc;
+}
