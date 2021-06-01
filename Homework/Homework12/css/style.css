@@ -53,6 +53,11 @@ p {
   float: left;
 }
 
+.slogon {
+  font-weight: 700;
+  padding-top: 20px;
+}
+
 .clear {
   clear: both;
 }
@@ -87,9 +92,9 @@ p {
   position: absolute;
   z-index: 2;
   padding: 10px 0;
-  top: 45px;
+  top: 47px;
   left: 0;
-  background: rgb(148, 170, 6);
+  background: rgb(3, 119, 208);
   width: 200px;
 }
 
@@ -108,4 +113,23 @@ p {
 
 .slider {
   overflow: hidden;
+  height: auto;
+}
+
+.slide1 {
+  background: url(../img/slide1.jpg) no-repeat;
+  background-size: cover;
+  padding: 300px 0;
+}
+
+.slide2 {
+  background: url(../img/slide2.jpg) no-repeat;
+  background-size: cover;
+  padding: 300px 0;
+}
+
+.slide3 {
+  background: url(../img/slide3.jpg) no-repeat;
+  background-size: cover;
+  padding: 300px 0;
 }
