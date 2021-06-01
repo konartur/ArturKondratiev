@@ -39,7 +39,7 @@ td {
 }
 
 .description {
-  width: 500px;
+  width: 300px;
 }
 
 .table__header,
@@ -47,4 +47,13 @@ td {
   font-size: 24px;
   color: rgb(0, 70, 136);
   background-color: #ccc;
+}
+
+.wiki {
+  width: auto;
+}
+iframe {
+  width: 100%;
+  height: auto;
+  border: none;
 }
