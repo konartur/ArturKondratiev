@@ -14,7 +14,10 @@ jQuery(document).ready(function () {
     dotsSpeed: 1000,
     loop: true,
     nav: true,
-    navText: ["<", ">"],
+    navText: [
+      '<i class="fas fa-arrow-left"></i>',
+      '<i class="fas fa-arrow-right"></i>',
+    ],
     dots: false,
     mouseDrag: true,
     margin: 30,
