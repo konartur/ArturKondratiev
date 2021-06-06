@@ -29,12 +29,22 @@ ul li:hover {
 section {
   background-color: burlywood;
   margin-top: 40px;
+  width: 50%;
 }
 
 section button {
+  float: left;
   color: #fff;
   background-color: rgb(238, 167, 74);
   border: 1px solid rgb(89, 51, 1);
   padding: 10px 20px;
-  margin: 15px;
+  margin: 5%;
+  width: 40%;
+}
+
+.right {
+  float: right;
+}
+.clear {
+  clear: both;
 }
