@@ -10,3 +10,11 @@ body {
   background-size: cover;
   background-position: top;
 }
+
+header {
+  letter-spacing: 2px;
+  font-family: cursive;
+  text-align: center;
+  font-style: italic;
+  font-weight: normal;
+}
