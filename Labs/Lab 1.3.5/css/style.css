@@ -8,4 +8,5 @@ body {
   background-image: url(../img/world-map.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top;
 }
