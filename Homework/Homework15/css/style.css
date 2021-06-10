@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h2 {
+  text-align: center;
+}
+ul {
+  font-size: 24px;
+  font-weight: 500;
+}
+ul li {
+  padding: 10px;
+}
+
+.first {
+  text-shadow: 10px 18px #ccc;
+}
+
+.second {
+  text-shadow: 10px 18px 2px #ccc;
+}
+
+.third {
+  text-shadow: 10px 18px rgb(179 15 15), 9px -11px rgb(0 130 216),
+    1px 1px rgb(182 5 226);
+}
