@@ -93,3 +93,17 @@ ul li {
   box-shadow: inset 5px 5px 5px rgb(141, 0, 19),
     inset -5px -5px 5px rgb(43, 0, 145);
 }
+
+/* Slide4 */
+.gradient__first {
+  background: linear-gradient(
+    to right,
+    red 15%,
+    blue 35%,
+    rgb(250, 248, 248) 80%,
+    red 100%
+  );
+  border: 1px solid black;
+  height: 200px;
+  width: 400px;
+}
