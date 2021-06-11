@@ -3,12 +3,40 @@
   margin: 0;
   box-sizing: border-box;
 }
+body,
+html {
+  height: 100%;
+}
+
+.for_page {
+  position: relative;
+  min-height: 100%;
+}
+
+.page {
+  padding-bottom: 100px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #00506d;
+  height: 100px;
+  width: 100%;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
 h2 {
   text-align: center;
 }
 ul {
   font-size: 24px;
   font-weight: 500;
+  list-style-type: circle;
 }
 ul li {
   padding: 15px;
@@ -42,4 +70,21 @@ ul li {
   background: #ccf;
   color: #bbe;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* Slide2 */
+.box {
+  width: 300px;
+  height: 300px;
+  border: 1px solid rgb(10, 10, 10);
+  margin-top: 50px;
+  background-color: teal;
+}
+
+.box-shadow-first {
+  box-shadow: 15px 15px #734949;
+}
+
+.box-shadow-second {
+  box-shadow: 15px 15px 5px #734949;
 }
