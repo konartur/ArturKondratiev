@@ -15,6 +15,9 @@ ul {
 
 ul li:before {
   content: "*";
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 /* Second task */
 .second-task {
