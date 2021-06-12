@@ -117,16 +117,16 @@ ul li {
 .gradient__second {
   background: linear-gradient(
     to bottom,
-    red 30%,
-    rgb(255, 255, 255) 30%,
-    rgb(250, 248, 248) 70%,
-    red 70%,
+    red 35%,
+    rgb(255, 255, 255) 35%,
+    rgb(250, 248, 248) 65%,
+    red 65%,
     red 100%
   );
 
   border: 1px solid black;
   margin-bottom: 20px;
-  height: 200px;
+  height: 350px;
   width: 800px;
 }
 
