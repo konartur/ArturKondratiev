@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+.button {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+.button a {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 50px;
+  padding: 20px 50px;
+  color: black;
+  background-color: #adc1f3;
+  border: 8px solid transparent;
+  transition: all 0.3s ease-out;
+}
+
+.button a:hover {
+  border: 8px solid #d4def5;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff,
+    0 0 40px #d4def5, 0 0 80px #d4def5, 0 0 90px #d4def5, 0 0 100px #d4def5,
+    0 0 150px #d4def5;
+
+  color: #ffffff;
+}
