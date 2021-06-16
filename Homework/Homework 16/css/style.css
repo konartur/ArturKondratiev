@@ -49,6 +49,9 @@
   position: absolute;
   width: 100px;
   height: 100px;
+  text-align: center;
+  font-size: 80px;
+  padding: 10px;
   background-color: chocolate;
   -webkit-animation: 4s linear 0s infinite alternate square;
   -moz-animation: 4s linear 0s infinite alternate square;
