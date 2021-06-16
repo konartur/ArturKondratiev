@@ -59,6 +59,34 @@
   -o-animation: 4s linear 0s infinite alternate square;
   animation: 4s linear 0s infinite alternate square;
 }
+.square__animation2 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 80px;
+  color: #fff;
+  padding: 10px;
+  background-color: chocolate;
+  -webkit-animation: 4s linear 0s infinite alternate square2;
+  -moz-animation: 4s linear 0s infinite alternate square2;
+  -o-animation: 4s linear 0s infinite alternate square2;
+  animation: 4s linear 0s infinite alternate square2;
+}
+.square__animation3 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 80px;
+  color: #fff;
+  padding: 10px;
+  background-color: chocolate;
+  -webkit-animation: 4s linear 0s infinite alternate square3;
+  -moz-animation: 4s linear 0s infinite alternate square3;
+  -o-animation: 4s linear 0s infinite alternate square3;
+  animation: 4s linear 0s infinite alternate square3;
+}
 
 @-webkit-keyframes square {
   from {
@@ -165,5 +193,109 @@
   to {
     top: 0;
     left: 0;
+  }
+}
+@-web-kit-keyframes square2 {
+  from {
+    top: 100px;
+    left: 100px;
+    background: #06d191;
+  }
+  25% {
+    top: 100px;
+    left: 400px;
+    background: #0e07a3;
+  }
+  50% {
+    top: 400px;
+    left: 400px;
+    background: #b39108;
+  }
+  75% {
+    top: 400px;
+    left: 100px;
+    background: #d40bdf;
+  }
+  to {
+    top: 100px;
+    left: 100px;
+  }
+}
+@-o-keyframes square2 {
+  from {
+    top: 100px;
+    left: 100px;
+    background: #06d191;
+  }
+  25% {
+    top: 100px;
+    left: 400px;
+    background: #0e07a3;
+  }
+  50% {
+    top: 400px;
+    left: 400px;
+    background: #b39108;
+  }
+  75% {
+    top: 400px;
+    left: 100px;
+    background: #d40bdf;
+  }
+  to {
+    top: 100px;
+    left: 100px;
+  }
+}
+@keyframes square2 {
+  from {
+    top: 100px;
+    left: 100px;
+    background: #06d191;
+  }
+  25% {
+    top: 100px;
+    left: 400px;
+    background: #0e07a3;
+  }
+  50% {
+    top: 400px;
+    left: 400px;
+    background: #b39108;
+  }
+  75% {
+    top: 400px;
+    left: 100px;
+    background: #d40bdf;
+  }
+  to {
+    top: 100px;
+    left: 100px;
+  }
+}
+@keyframes square3 {
+  from {
+    top: 200px;
+    left: 200px;
+    background: #06d191;
+  }
+  25% {
+    top: 200px;
+    left: 300px;
+    background: #0e07a3;
+  }
+  50% {
+    top: 300px;
+    left: 300px;
+    background: #b39108;
+  }
+  75% {
+    top: 300px;
+    left: 200px;
+    background: #d40bdf;
+  }
+  to {
+    top: 200px;
+    left: 200px;
   }
 }
