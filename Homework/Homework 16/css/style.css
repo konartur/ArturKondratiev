@@ -8,6 +8,8 @@
   width: 1170px;
   margin: 0 auto;
 }
+
+/* Button */
 .button {
   margin-top: 40px;
   display: flex;
@@ -34,4 +36,130 @@
     0 0 150px #d4def5;
 
   color: #ffffff;
+}
+
+/* Animation */
+
+.square {
+  position: relative;
+  margin: 0 auto;
+  width: 600px;
+}
+.square__animation {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: chocolate;
+  -webkit-animation: 4s linear 0s infinite alternate square;
+  -moz-animation: 4s linear 0s infinite alternate square;
+  -o-animation: 4s linear 0s infinite alternate square;
+  animation: 4s linear 0s infinite alternate square;
+}
+
+@-webkit-keyframes square {
+  from {
+    top: 0;
+    left: 0;
+    background: #06d191;
+  }
+  25% {
+    top: 0;
+    left: 500px;
+    background: #0e07a3;
+  }
+  50% {
+    top: 500px;
+    left: 500px;
+    background: #b39108;
+  }
+  75% {
+    top: 500px;
+    left: 0;
+    background: #d40bdf;
+  }
+  to {
+    top: 0;
+    left: 0;
+  }
+}
+
+@-moz-keyframes square {
+  from {
+    top: 0;
+    left: 0;
+    background: #06d191;
+  }
+  25% {
+    top: 0;
+    left: 500px;
+    background: #0e07a3;
+  }
+  50% {
+    top: 500px;
+    left: 500px;
+    background: #b39108;
+  }
+  75% {
+    top: 500px;
+    left: 0;
+    background: #d40bdf;
+  }
+  to {
+    top: 0;
+    left: 0;
+  }
+}
+
+@-o-keyframes square {
+  from {
+    top: 0;
+    left: 0;
+    background: #06d191;
+  }
+  25% {
+    top: 0;
+    left: 500px;
+    background: #0e07a3;
+  }
+  50% {
+    top: 500px;
+    left: 500px;
+    background: #b39108;
+  }
+  75% {
+    top: 500px;
+    left: 0;
+    background: #d40bdf;
+  }
+  to {
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes square {
+  from {
+    top: 0;
+    left: 0;
+    background: #06d191;
+  }
+  25% {
+    top: 0;
+    left: 500px;
+    background: #0e07a3;
+  }
+  50% {
+    top: 500px;
+    left: 500px;
+    background: #b39108;
+  }
+  75% {
+    top: 500px;
+    left: 0;
+    background: #d40bdf;
+  }
+  to {
+    top: 0;
+    left: 0;
+  }
 }
