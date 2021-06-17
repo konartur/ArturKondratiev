@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+/* Blog */
+.blog {
+  margin-top: 20px;
+}
+.blog__item {
+  width: 375px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  background-color: #ccc;
+}
