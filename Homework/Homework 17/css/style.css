@@ -27,3 +27,39 @@ img {
   margin-bottom: 30px;
   background-color: #ccc;
 }
+
+.item__image {
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.item__title {
+  text-align: center;
+  min-height: 40px;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.item__title a {
+  text-decoration: none;
+  color: black;
+}
+
+.item__text {
+  max-height: 150px;
+  overflow: hidden;
+  line-height: 21px;
+  text-align: justify;
+  padding: 0 5px;
+  text-indent: 15px;
+}
+
+.blog a.item__blog {
+  text-decoration: none;
+  color: #fff;
+  background-color: #09384c;
+  margin: 5px 5px;
+  display: block;
+  padding: 10px 23px;
+  width: 120px;
+}
