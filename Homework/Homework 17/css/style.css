@@ -31,20 +31,27 @@ img {
   max-height: 200px;
   overflow: hidden;
 }
-.item__image img:hover {
+
+.item__image img {
+  transition: all 0.3s linear;
+}
+.item__image:hover img {
   transform: scale(1.1)
 }
 
 .item__title {
+  font-size: 28px;
+  font-style: italic;
   text-align: center;
   min-height: 40px;
-  margin-top: 15px;
+  margin: 15px 0;
   padding: 5px;
 }
 
 .item__title a {
   text-decoration: none;
   color: black;
+  transition: all 0.1s linear;
 }
 
 .item__title a:hover {
@@ -68,6 +75,7 @@ img {
   margin: 5px 5px;
   display: inline-block;
   padding: 10px 23px;
+  transition: all 0.3s linear;
 }
 
 .blog a.item__blog:hover {
@@ -109,10 +117,7 @@ img {
   -moz-animation-timing-function: steps(12);
   -o-animation-timing-function: steps(12);
           animation-timing-function: steps(12);
-}
-
-.animation:hover {
-  transform: scale(3);
+          transform: scale(1.5);
 }
 
 @keyframes walk {
