@@ -19,6 +19,7 @@ img {
 
 /* Blog */
 .blog {
+  position: relative;
   margin-top: 50px;
 }
 .blog__item {
@@ -97,7 +98,8 @@ img {
 /* Animation */
 
 .animation {
-  margin: 20px auto 0;
+  /* margin: 20px auto 0; */
+  position: absolute;
   background: url(../img/sprite-walking.png) no-repeat;
   height: 150px;
   width: calc(1105px / 12);
@@ -108,7 +110,7 @@ img {
   -webkit-animation-duration: 3s;
   -moz-animation-duration: 3s;
   -o-animation-duration: 3s;
-          animation-duration: 3s;
+          animation-duration: 10s;
   -webkit-animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
   -o-animation-iteration-count: infinite;
@@ -117,15 +119,20 @@ img {
   -moz-animation-timing-function: steps(12);
   -o-animation-timing-function: steps(12);
           animation-timing-function: steps(12);
-          transform: scale(1.5);
+          /* transform: scale(1.5); */
 }
+
+
 
 @keyframes walk {
   from {
+    top: 0;
+    right: 0;
     background-position: 0;
   }
-
   to {
+    top: 800px;
+    right: 0;
     background-position: -1105px;
   }
 }
