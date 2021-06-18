@@ -85,3 +85,69 @@ img {
   border-radius: 50%;
  object-fit: cover;
 }
+
+/* Animation */
+
+.animation {
+  margin: 20px auto 0;
+  background: url(../img/sprite-walking.png) no-repeat;
+  height: 150px;
+  width: calc(1105px / 12);
+  -webkit-animation-name: walk;
+  -moz-animation-name: walk;
+  -o-animation-name: walk;
+          animation-name: walk;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(12);
+  -moz-animation-timing-function: steps(12);
+  -o-animation-timing-function: steps(12);
+          animation-timing-function: steps(12);
+}
+
+.animation:hover {
+  transform: scale(3);
+}
+
+@keyframes walk {
+  from {
+    background-position: 0;
+  }
+
+  to {
+    background-position: -1105px;
+  }
+}
+@-webkit-keyframes walk {
+  from {
+    background-position: 0;
+  }
+
+  to {
+    background-position: -1105px;
+  }
+}
+@-moz-keyframes walk {
+  from {
+    background-position: 0;
+  }
+
+  to {
+    background-position: -1105px;
+  }
+}
+@-o-keyframes walk {
+  from {
+    background-position: 0;
+  }
+
+  to {
+    background-position: -1105px;
+  }
+}
