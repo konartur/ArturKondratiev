@@ -68,6 +68,41 @@ img {
     font-weight: 300;
 }
 
+@media (max-width: 768px) {
+    .header__logo {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .header__menu {
+        padding: 15px 0;
+    }
+
+    .header__title {
+        margin-top: 55px;
+    }
+    .title {
+        font-size: 39px;
+
+    }
+
+    .sub-title {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header__menu ul {
+        flex-direction: column;
+        align-content: center;
+    }
+    .title {
+        font-size: 35px;
+
+    }
+}
+
 font-family: 'open_sansbold';
 font-family: 'cardoitalic';
 font-family: 'open_sansregular';
