@@ -89,6 +89,14 @@ img {
     text-transform: uppercase;
     background-color: #e84545;
     color: #fff;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+.header__button a:hover {
+    text-decoration: none;
+    border: 1px solid #fff;
+    background-color: #505369;
+    color: #fff;
 }
 
 /* Features */
@@ -122,14 +130,12 @@ img {
 }
 @media (max-width: 992px) {
     .header {
-        height: 80vh;
+        height: 90vh;
     }
 }
 
 @media (max-width: 768px) {
-    .header {
-        height: 60vh;
-    }
+
     .header__logo {
         text-align: center;
         padding: 15px;
