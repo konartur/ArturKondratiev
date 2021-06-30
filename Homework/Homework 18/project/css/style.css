@@ -36,6 +36,13 @@ img {
 .header__menu ul li a {
     text-transform: uppercase;
     color: #fff;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.header__menu ul li a:hover {
+    color: #e84545;
+    border: 1px solid #505369 ;
 }
 
 .header-border {
