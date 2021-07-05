@@ -26,6 +26,10 @@
         height: 239px;
 
     }
+
+    .box-team {
+        padding-bottom: 60px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -35,6 +39,13 @@
 
     .gallery a {
         width: 50%;
+    }
+
+    .box-team {
+        padding-bottom: 40px;
+        max-width: 316px;
+        margin:0 auto;
+
     }
 }
 

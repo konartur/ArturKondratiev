@@ -133,6 +133,7 @@ img {
 .gallery {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 
 .gallery a {
@@ -157,7 +158,59 @@ img {
     margin-right: 0;
 }
 
+/* Team */
+.box-team {
+    padding-bottom: 100px;
+}
+.box-team-name {
+    font-family: 'ralewayregular';
+    font-size: 22px;
+    margin-top: 30px;
+}
 
+.box-team-position {
+    margin-top: 15px;
+    font-family: 'ralewayregular';
+    font-size: 13px;
+    color: #e84545;
+    text-transform: uppercase;
+}
+
+.box-team-text {
+    font-family: 'ralewayregular';
+    font-size: 14px;
+    color: #6c7279;
+    margin-top: 29px;
+}
+
+.box-team-social {
+    margin-top: 29px;
+    display: flex;
+}
+
+.box-team-social a {
+    display: block;
+}
+.box-team-social a:hover {
+    text-decoration: none;
+}
+.box-team-social a i {
+    display: block;
+    font-size: 22px;
+    color: #c6cacc;
+    border: solid 1px #c6cacc;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 9px;
+    margin-right: 4px;
+    transition: 0.7s;
+}
+.box-team-social a i:hover {
+    color: antiquewhite;
+    border: 1px solid #c6cacc;
+}
 font-family: 'open_sansbold';
 font-family: 'cardoitalic';
 font-family: 'open_sansregular';
