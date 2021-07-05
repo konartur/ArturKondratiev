@@ -6,6 +6,7 @@
 body,
 html {
     font-size: 14px;
+    scroll-behavior: smooth;
 }
 a {
      font-family: 'ralewayregular';
@@ -211,9 +212,68 @@ img {
     color: antiquewhite;
     border: 1px solid #c6cacc;
 }
+
+/* Carousel */
+.carousel-reviews {
+    padding-bottom: 100px;
+    display: flex;
+}
+
+.bg-carousel-reviews {
+    width: 50%;
+    background: url(../img/img-lady.jpg) no-repeat;
+    background-size: cover;
+    background-position: top right;
+    height: 700px;
+}
+
+.owl-carousel-reviews {
+    background-color: #53354a;
+    padding: 75px 65px;
+    width: 50%;
+}
+
+.text-owl-carousel {
+    font-family: 'cardoitalic';
+   font-size: 36px;
+   color: #fff;
+   line-height: 48px;
+   margin-bottom: 40px;
+}
+
+.name-owl-carousel {
+    font-family: 'ralewaybold';
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#carousel-reviews .owl-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 63px;
+}
+
+#carousel-reviews .owl-dot {
+    outline: none;
+}
+
+#carousel-reviews .owl-dot span:hover,
+#carousel-reviews .owl-dot.active span {
+    background: #fff;
+}
+
+#carousel-reviews .owl-dot span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background: #755d6e;
+    margin-right: 8px;
+    display: block;
+    transition: 0.7s;
+}
 font-family: 'open_sansbold';
-font-family: 'cardoitalic';
 font-family: 'open_sansregular';
 font-family: 'ralewaylight';
-font-family: 'ralewaybold';
+
 font-family: 'ralewaysemibold';

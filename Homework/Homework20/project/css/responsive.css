@@ -7,6 +7,9 @@
     .gallery a {
         height: 297px;
     }
+    .bg-carousel-reviews {
+        height: 500px;
+    }
 }
 @media (max-width: 1650px) {
     .gallery a {
@@ -20,6 +23,9 @@
         max-height: 255px;
 
     }
+    .owl-carousel-reviews {
+        padding: 51px 65px;
+    }
 }
 @media (max-width: 1350px) {
     .gallery a {
@@ -31,7 +37,16 @@
         padding-bottom: 60px;
     }
 }
-
+@media (max-width:1199px) {
+   
+    .bg-carousel-reviews {
+        display: none;
+    }
+    .owl-carousel-reviews {
+        padding: 85px 40px;
+        width: 100%;
+    }
+}
 @media (max-width: 992px) {
     .header {
         height: 90vh;
@@ -47,6 +62,7 @@
         margin:0 auto;
 
     }
+  
 }
 
 @media (max-width: 768px) {
