@@ -73,6 +73,20 @@
         margin:0 auto;
 
     }
+
+    /* Footer */
+    .footer {
+        font-size: 12px;
+    }
+
+    .footer h3 {
+        font-size: 16px;
+    }
+    .social__fb,
+.social__twitter,
+.social__link {
+    font-size: 25px;
+}
   
 }
 
@@ -264,5 +278,18 @@
   transition-duration: .25s;
 }
 
+/* Footer */
+.footer__location,
+.footer__social,
+.footer__about {
+    margin-bottom: 25px;
+}
 
+.footer .container {
+    padding-bottom: 20px;
+}
+
+.footer__copyright {
+    font-size: 12px;
+}
 }
