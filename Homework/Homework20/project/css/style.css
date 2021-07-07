@@ -92,12 +92,10 @@ img {
     text-transform: uppercase;
     background-color: #e84545;
     color: #fff;
-    border: 1px solid transparent;
     transition: all 0.2s ease-in-out;
 }
 .header__button a:hover {
     text-decoration: none;
-    border: 1px solid #fff;
     background-color: #505369;
     color: #fff;
 }
@@ -231,7 +229,7 @@ img {
 
 .owl-carousel-reviews {
     background-color: #53354a;
-    padding: 75px 65px;
+    padding: 74px 65px;
     width: 50%;
 }
 
@@ -274,8 +272,54 @@ img {
     display: block;
     transition: 0.7s;
 }
-font-family: 'open_sansbold';
-font-family: 'open_sansregular';
-font-family: 'ralewaylight';
+
+/* Download */
+
+.download {
+    margin: 100px 0;
+}
+
+.download__title {
+    text-align: center;
+    font-family: 'open_sansbold';
+    font-size: 20px;
+}
+
+.download__subtitle {
+    text-align: center;
+    font-family: 'open_sansregular';
+    font-size: 14px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.download__title,
+.download__subtitle {
+    line-height: 1.5;
+}
+
+.download__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.download__btn a {
+    background-color: #e84545;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    color: #fff;
+    font-family: 'ralewaylight';
+    font-size: 14px;
+    padding: 15px 85px;
+}
+
+.download__btn a:hover {
+    text-decoration: none;
+    border: 1px solid #fff;
+    background-color: #505369;
+    color: #fff;
+}
 
 font-family: 'ralewaysemibold';

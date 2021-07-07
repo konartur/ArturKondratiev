@@ -24,7 +24,7 @@
 
     }
     .owl-carousel-reviews {
-        padding: 51px 65px;
+        padding: 50px 65px;
     }
 }
 @media (max-width: 1350px) {
@@ -138,6 +138,17 @@
     .gallery a:nth-child(8) {
         margin-right: auto;
     }
+    /* Download */
+.download__title {
+    font-size: 18px;
+}
+.download__subtitle {
+    font-size: 12px;
+}
+.download__btn a {
+    font-size: 12px;
+    padding: 15px 75px;
+}
 }
 @media (max-width: 576px) {
     .header__menu {
@@ -252,4 +263,6 @@
 .menu__item {
   transition-duration: .25s;
 }
+
+
 }
