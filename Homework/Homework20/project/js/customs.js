@@ -3,6 +3,8 @@ jQuery.noConflict();
 jQuery(document).ready(function () {
   "use strict";
 
+
+
   jQuery(".fancybox").fancybox();
 
   var slid = jQuery("#carousel-reviews");

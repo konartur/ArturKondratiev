@@ -20,13 +20,12 @@ img {
     height: auto;
     max-width: 100%;
 }
+
 /* Header */
 .header {
     background: url(../img/background.jpg) no-repeat ;
     background-size: cover;
     background-position: left top;
-    height: 100vh;
- 
 }
 
 .header__logo,
@@ -82,7 +81,7 @@ img {
 .header__button {
   display: flex;
   justify-content: center;
-  margin-top: 75px;
+  padding: 75px 0;
 }
 
 .header__button a {
