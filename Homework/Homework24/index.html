@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework24</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #c4fcff;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .button a {
+            position: relative;
+            font-size: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background: #6e7cad;
+            border: 5px solid #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            padding: 20px 80px;
+            transition: background 0.2s ease-in, color 0.5s ease-in-out, border 0.2s linear;
+        }
+
+        .button a:before {
+            position: absolute;
+            content: "switch";
+            font-size: 20px;
+            left: 31%;
+            top: 17%;
+            color: white;
+        }
+
+        .button:last-child a:before {
+            content: "if else";
+        }
+
+        .button a:hover {
+            background-color: #fff;
+            border-color: #6e7cad;
+        }
+
+        .button a:hover::before {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="button">
+            <a class="btn-1" href="#">Какой-то текст</a>
+        </div>
+
+        <div class="button">
+            <a class="btn-2" href="#">Какой-то текст</a>
+        </div>
+    </div>
+    <script>
+        let btn1 = document.querySelector('.btn-1')
+        let btn2 = document.querySelector('.btn-2')
+
+        // switch
+        btn1.onclick = () => {
+            let answer = prompt("Укажите правильный цвет", "")
+            switch (answer) {
+                case 'red':
+                    alert('Есть такой цвет')
+                    break;
+                case 'blue':
+                    alert('Есть такой цвет')
+                    break;
+                case 'green':
+                    alert('Есть такой цвет')
+                    break;
+                case 'black':
+                    alert('Есть такой цвет')
+                    break;
+                case 'white':
+                    alert('Есть такой цвет')
+                    break;
+                default:
+                    alert('Такого цвета нет')
+                    break;
+            }
+        }
+
+        // if else
+        btn2.onclick = () => {
+            let answer = prompt("Укажите правильный цвет", "")
+
+            if (answer === 'red' || answer === 'blue' || answer === 'green' || answer === 'black' || answer === 'white') {
+                alert('Есть такой цвет')
+            } else {
+                alert('Такого цвета нет')
+            }
+        }
+
+    </script>
+</body>
+
+</html>
