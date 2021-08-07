@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
+
 }
 :root {
     --color-blue : #29c5e6;
     --color-gray : #e2e2e2;
     --color-dark-gray: #8f8f8f;
     --color-middle-gray: #b6b6b6;
+    --font-oswald : 'Oswald', sans-serif;
 }
 
 body {
@@ -23,6 +28,7 @@ body {
 
 .search {
     display: flex;
+    justify-content: flex-end;
 }
 
 .search__input {
@@ -30,12 +36,55 @@ body {
     background-color: #f3f3f3;
     color: #c3c3c3;
     padding: 10px;
+    
+    font-family: 'Tahoma Regular font';
+    font-size: 12px;
+}
+
+.search__input::placeholder {
+    color: #c3c3c3;
 }
 
 .search__btn {
     padding: 10px;
     text-decoration: none;
     text-transform: uppercase;
-    color: white;
+    color: #fff;
     background-color: var(--color-blue);
+
+    font-family: 'Tahoma Regular font';
+
+    transition: background-color 0.2s ease-out;
+}   
+
+.search__btn:hover {
+    color: var(--color-blue);
+    background-color: #f3f3f3;
+}
+
+/* Nav */
+.header__nav {
+    margin-top: 20px;
+    background-color: #f3f3f3;
+    border: 1px solid #e7e7e7;
+}
+
+.nav .nav-item .nav-link {
+    padding: 15px 41px;
+
+    color: #b2b2b2;
+    background-color: #f3f3f3;
+  
+    
+    font-family: var(--font-oswald);
+    font-weight: 400;
+    
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in-out;
+}
+
+
+.nav .nav-item .nav-link:hover {
+    background-color: var(--color-blue);
+    color: #fff;
 }
