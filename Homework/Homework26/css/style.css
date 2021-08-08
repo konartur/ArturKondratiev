@@ -21,6 +21,11 @@ body {
     background-size: cover;
 }
 
+body .container {
+    max-width: 960px;
+}
+
+
 
 .header {
     margin-top: 25px;
@@ -67,12 +72,29 @@ body {
 /* Nav */
 .header__nav {
     margin-top: 20px;
-    background-color: #f3f3f3;
-    border: 1px solid #e7e7e7;
+    /* background-color: #f3f3f3; */
+    /* border: 1px solid #e7e7e7; */
+}
+
+.header__nav ul.nav {
+    flex-wrap: nowrap;
+}
+.nav .nav-item {
+    max-width: 120px;
+    width: 100%;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.nav .nav-item:first-child {
+    border-left: 1px solid #e7e7e7;
+}
+.nav .nav-item:last-child {
+    border-right: 1px solid #e7e7e7;
 }
 
 .nav .nav-item .nav-link {
-    padding: 15px 40px;
+    padding: 15px 30px;
 
     color: #b2b2b2;
     background-color: #f3f3f3;
