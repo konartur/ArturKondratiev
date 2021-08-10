@@ -108,7 +108,7 @@ body .container {
     margin-top: 20px;
 }
 
-.header__nav ul.nav {
+.header__nav .nav {
     flex-wrap: nowrap;
 }
 .nav .nav-item {
