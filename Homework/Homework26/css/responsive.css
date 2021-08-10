@@ -1,3 +1,10 @@
+
+@media(min-width: 951px) {
+     .header .header__top .row .col-lg-2,
+     .header .header__top .row .col-lg-3 {
+        width: 16.66666667%;
+    }
+}
 @media (max-width: 950px) {
     /* Header */
 .header__top .row {
