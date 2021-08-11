@@ -107,5 +107,32 @@
 
 }
 
+/* Tabs  */
+@media (max-width: 872px) {
+    .tabs nav .nav {
+        justify-content: center;
+    }
+    .tabs nav .nav-link {
+        font-size: 0;
+        flex-grow: 0;
+        padding: 5px 10px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .tab-content .tab__header  {
+        font-size: 30px ;
+    }
+    .tab-content .tab__subheader {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px){
+    .tab-content .tab__header  {
+        font-size: 24px ;
+    } 
+}
 /* http://127.0.0.1:5500/ */
 /* 6.00 */
