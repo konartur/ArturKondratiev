@@ -207,3 +207,70 @@ body .container {
 .tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active .tab__number {
     background-color: var(--color-blue);
 }
+
+/* Main block */
+.main {
+    margin-top: 30px;
+}
+
+.main__card .card__side .card__marker {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: var(--color-blue);
+    margin-right: 5px;
+}
+
+.main__card .card__side .card__title{
+    text-transform: uppercase;
+    font-family: var(--font-oswald);
+    font-weight: normal;
+    font-size: 13px;
+    color: #7e7e7e;
+}
+
+.main__card .card__side .card__img {
+    width: 143px;
+    height: 143px;
+    background-color: #e2e2e2;
+    border: 1px solid #fff;
+    outline: 1px solid #cccccc;
+    margin-top: 15px;
+}
+
+.main__card .card__content .card__border {
+    background: url(../img/border__card.png) repeat-x;
+    height: 15px;
+    margin-bottom: 15px;
+}
+
+.main__card .card__content .card__text {
+    color: #8f8f8f;
+    line-height: 1.3;
+    font-family: 'Tahoma Regular font';
+    font-weight: normal;
+    font-size: 12px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.main__card .card__content .card__text.text-italic {
+    font-style: italic;
+}
+
+.main__card .card__content .card__btn {
+    color: #525252;
+    text-decoration: underline;
+    font-family: 'Tahoma Regular font';
+    font-size: 12px;
+    transition: all 0.2s ease-in-out;
+}
+
+.main__card .card__content .card__btn:hover {
+    color: var(--color-blue);
+}
+
+.main__card .card__content .card__author {
+    color: #525252;
+    font-family: 'Tahoma Regular font';
+    font-size: 12px;
+}
