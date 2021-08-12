@@ -103,6 +103,20 @@
     margin-bottom: 30px;
 }
 
+/* Card for members team */
+.main__card.card-team .team-member__img {
+    width: 143px;
+    height: 143px;
+}
+
+.main__card.card-team .team-member__title {
+    text-align: center;
+    margin-top: 15px;
+}
+.main__card.card-team .team-member__text {
+    margin: 15px 0;
+}
+
 }
 
 /* Tabs  */
@@ -138,12 +152,16 @@
     .main__card .card__content .card__border {
         display: none;
     }
+
+      
 }
 
 @media (max-width: 576px){
     .tab-content .tab__header  {
         font-size: 24px ;
     } 
+
+  
 }
 /* http://127.0.0.1:5500/ */
 /* 6.00 */
