@@ -290,6 +290,34 @@ body .container {
     margin-left: 15px;
 }
 
-.main .row:nth-child(2) {
-    margin-top: 40px;
+.main .main-top {
+    margin-bottom: 40px;
+}
+
+/* Card for team members */
+.main__card.card-team .team-member__img {
+    width: 40px;
+    height: 40px;
+    background-color: #e2e2e2;
+    border: 1px solid #fff;
+    outline: 1px solid #ccc;
+}
+
+.main__card.card-team .team-member__title {
+    text-transform: uppercase;
+    font-family: 'Tahoma Regular font';
+    font-weight: normal;
+    font-size: 11px;
+    color: #525252;
+}
+
+.main__card.card-team .team-member__text {
+    color: #adadad;
+    font-family: 'Tahoma Regular font';
+    font-weight: normal;
+    font-size: 11px;
+    text-align: justify;
+    line-height: 1.3;
+    max-height: 30px;
+    overflow: hidden;
 }
