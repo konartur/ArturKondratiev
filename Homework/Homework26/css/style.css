@@ -27,7 +27,7 @@ a {
 
 body {
     border-top: 5px solid #7e7e7e;
-    background: url(../img/background.png) no-repeat;
+    background: url(../img/background.png);
     background-size: cover;
 }
 
@@ -213,7 +213,7 @@ body .container {
     margin-top: 30px;
 }
 
-.main__card .card__side .card__marker {
+.main__card  .card__marker {
     display: inline-block;
     width: 15px;
     height: 15px;
@@ -221,7 +221,7 @@ body .container {
     margin-right: 5px;
 }
 
-.main__card .card__side .card__title{
+.main__card .card__title{
     display: flex;
     text-transform: uppercase;
     font-family: var(--font-oswald);
@@ -239,13 +239,19 @@ body .container {
     margin-top: 15px;
 }
 
-.main__card .card__content .card__border {
+.main__card .card__border {
     background: url(../img/border__card.png) repeat-x;
     height: 15px;
     margin-bottom: 15px;
 }
 
-.main__card .card__content .card__text {
+.main__card.card-services .card__border,
+.main__card.card-team .card__border,
+.main__card.card-support .card__border {
+    flex-grow: 3;
+}
+
+.main__card .card__text {
     color: #8f8f8f;
     line-height: 1.3;
     font-family: 'Tahoma Regular font';
@@ -258,7 +264,7 @@ body .container {
     font-style: italic;
 }
 
-.main__card .card__content .card__btn {
+.main__card  .card__btn {
     color: #525252;
     text-decoration: underline;
     font-family: 'Tahoma Regular font';
@@ -266,7 +272,7 @@ body .container {
     transition: all 0.2s ease-in-out;
 }
 
-.main__card .card__content .card__btn:hover {
+.main__card .card__btn:hover {
     color: var(--color-blue);
 }
 
@@ -274,4 +280,16 @@ body .container {
     color: #525252;
     font-family: 'Tahoma Regular font';
     font-size: 12px;
+}
+
+.main__card .card__top {
+    display: flex;
+    justify-content: space-between;
+}
+.main__card .card__top .card__border {
+    margin-left: 15px;
+}
+
+.main .row:nth-child(2) {
+    margin-top: 40px;
 }
