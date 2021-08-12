@@ -2,7 +2,7 @@
 let burger = document.querySelector('.header__hamburger')
 let burgerOpen = false;
 let menu = document.querySelector('.nav');
-let maxWidth = 992;
+let maxWidth = 991;
 
 let onresize = function () {
     let width = document.body.clientWidth;
