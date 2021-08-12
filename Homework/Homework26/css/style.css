@@ -222,6 +222,7 @@ body .container {
 }
 
 .main__card .card__side .card__title{
+    display: flex;
     text-transform: uppercase;
     font-family: var(--font-oswald);
     font-weight: normal;

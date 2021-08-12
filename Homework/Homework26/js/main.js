@@ -2,18 +2,19 @@
 let burger = document.querySelector('.header__hamburger')
 let burgerOpen = false;
 let menu = document.querySelector('.nav');
+let maxWidth = 992;
 
 let onresize = function () {
     let width = document.body.clientWidth;
 
-    if(width > 950 ){
+    if(width > maxWidth ){
         menu.classList.remove('d-none')
         menu.classList.add('d-flex')  
     }
-    else if (width <= 950 && !burger.classList.contains('open')) {
+    else if (width <= maxWidth && !burger.classList.contains('open')) {
         menu.classList.remove('d-flex')
         menu.classList.add('d-none')
-    } else if (width <= 950 && burger.classList.contains('open')) {
+    } else if (width <= maxWidth && burger.classList.contains('open')) {
         menu.classList.remove('d-none')
         menu.classList.add('d-flex')
     }
