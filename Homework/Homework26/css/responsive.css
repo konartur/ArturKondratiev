@@ -110,11 +110,16 @@
 }
 
 .main__card.card-team .team-member__title {
-    text-align: center;
+   
     margin-top: 15px;
 }
 .main__card.card-team .team-member__text {
     margin: 15px 0;
+}
+
+.main .main-bottom > .row {
+    flex-direction: column;
+    align-items: center;
 }
 
 }
