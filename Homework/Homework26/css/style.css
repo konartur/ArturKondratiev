@@ -337,10 +337,10 @@ body .container {
     flex-grow: 5;
 }
 
-/* Swiper */
-.swiper-slide {
-    width: 14%;
-}
-.swiper-slide:nth-child(3) {
-    width: 20%;
+
+/* Client desktop */
+.clients-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
