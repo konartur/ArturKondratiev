@@ -213,7 +213,8 @@ body .container {
     margin-top: 30px;
 }
 
-.main__card  .card__marker {
+.main__card  .card__marker,
+.main__clients .title-marker {
     display: inline-block;
     width: 15px;
     height: 15px;
@@ -221,7 +222,8 @@ body .container {
     margin-right: 5px;
 }
 
-.main__card .card__title{
+.main__card .card__title,
+.main__clients .client__title{
     display: flex;
     text-transform: uppercase;
     font-family: var(--font-oswald);
@@ -239,7 +241,8 @@ body .container {
     margin-top: 15px;
 }
 
-.main__card .card__border {
+.main__card .card__border,
+.main__clients .client__border {
     background: url(../img/border__card.png) repeat-x;
     height: 15px;
     margin-bottom: 15px;
@@ -320,4 +323,24 @@ body .container {
     line-height: 1.3;
     max-height: 30px;
     overflow: hidden;
+}
+
+/* Clients block */
+.main__clients {
+    margin-top: 30px;
+}
+
+.main__clients .client__title {
+    flex-grow: 0.1;
+}
+.main__clients .client__border { 
+    flex-grow: 5;
+}
+
+/* Swiper */
+.swiper-slide {
+    width: 14%;
+}
+.swiper-slide:nth-child(3) {
+    width: 20%;
 }

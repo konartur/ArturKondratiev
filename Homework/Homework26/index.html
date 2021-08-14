@@ -11,6 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <link type="text/css" rel="stylesheet" href="css/responsive.css">
 </head>
@@ -304,11 +306,63 @@
                 </div>
             </div>
         </div>
+
+        <div class="main__clients">
+
+            <div class="clients__top d-flex justify-content-between">
+                <h3 class="client__title"><span class="title-marker"></span>Our clients</h3>
+                <div class="client__border"></div>
+            </div>
+
+            <div class="clients__bot">
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="./img/client1.png" alt="first client">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/client2.png" alt="second client">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/client3.png" alt="third client">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/client4.png" alt="fourth client">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/client5.png" alt="fifth client">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/client6.png" alt="sixth client">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/client7.png" alt="seventh client">
+                        </div>
+
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+            </div>
+
+        </div>
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
