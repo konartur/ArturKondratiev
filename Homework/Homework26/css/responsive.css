@@ -122,6 +122,12 @@
     align-items: center;
 }
 
+/* Footer */
+.footer .row {
+    justify-content: center;
+    text-align: center;
+}
+
 }
 
 /* Tabs  */

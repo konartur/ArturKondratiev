@@ -391,15 +391,20 @@ body .container {
 }
 
 .twitter-feed__text,
-.footer__sitemap {
+.footer__sitemap a{
+    text-decoration: none;
     color: #dbdbdb;
     font-family: var(--font-tahoma);
     font-size: 12px;
     font-weight: 400;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer__sitemap a:hover {
+    color: var(--color-blue);
 }
 
 .footer__logo {
-    /* margin-top: 25px; */
     padding: 25px 30px 20px;
 }
 
