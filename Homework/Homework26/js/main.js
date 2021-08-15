@@ -87,7 +87,7 @@ burger.addEventListener('click', () => {
     }
 })
 
-let swiperToggleByWidth = (width, laptopBreakpointWidth = 992) => {
+let swiperToggleByWidth = (width, laptopBreakpointWidth = 991) => {
   if (width >= laptopBreakpointWidth) {
     swiper.disable();
   } else {
