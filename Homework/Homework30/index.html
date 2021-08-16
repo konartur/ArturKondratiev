@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 30</title>
+    <style>
+        .out {
+            color: red;
+            font-size: 14px;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <label>Введите номер телефона <input type="tel" class="input__phone" maxlength="13" value="+380"></label>
+        <input type="submit" class="button" value="Отправить">
+    </form>
+    <div class="out"></div>
+
+    <script>
+
+        const button = document.querySelector('.button');
+
+        let checkPhone = () => {
+            let input, out, maxLengthPhone;
+            input = document.querySelector('.input__phone').value;
+            out = document.querySelector('.out');
+            out.innerHTML = '';
+            maxLengthPhone = 12;
+
+            try {
+                if (isNaN(input)) throw 'Введите число!';
+                if (input == '') throw 'Вы ничего не ввели!';
+                if (input.length > maxLengthPhone) throw 'Слишком длинный номер';
+                if (input.length < maxLengthPhone) throw 'Номер слишком короткий';
+            }
+            catch (err) {
+                out.innerHTML = err;
+            }
+        };
+
+        button.onclick = checkPhone;
+
+    </script>
+</body>
+
+
+</html>
