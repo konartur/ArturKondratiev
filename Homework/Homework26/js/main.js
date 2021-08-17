@@ -19,15 +19,6 @@ const swiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev',
   },
 
-  // And if we need scrollbar
-  // scrollbar: {
-  //   el: '.swiper-scrollbar',
-  // },
-  // speed: 400,
-  // spaceBetween: 100,
-    // Default parameters
-// slidesPerView: 7,
-// spaceBetween: 10,
 // Responsive breakpoints
 breakpoints: {
   // when window width is >= 320px
@@ -46,7 +37,7 @@ breakpoints: {
     spaceBetween: 30
   },
    // when window width is >= 992px
-  992: {
+  991: {
     slidesPerView: 7,
     spaceBetween: 20
     
@@ -58,17 +49,17 @@ let onresize = function () {
   let width = document.body.clientWidth;
   swiperToggleByWidth(width);
   
-    if(width > maxWidth ){
-        menu.classList.remove('d-none')
-        menu.classList.add('d-flex')  
-    }
-    else if (width <= maxWidth && !burger.classList.contains('open')) {
-        menu.classList.remove('d-flex')
-        menu.classList.add('d-none')
-    } else if (width <= maxWidth && burger.classList.contains('open')) {
-        menu.classList.remove('d-none')
-        menu.classList.add('d-flex')
-    }
+  if(width > maxWidth ){
+    menu.classList.remove('d-none')
+    menu.classList.add('d-flex')  
+  }
+  else if (width <= maxWidth && !burger.classList.contains('open')) {
+    menu.classList.remove('d-flex')
+    menu.classList.add('d-none')
+  } else if (width <= maxWidth && burger.classList.contains('open')) {
+    menu.classList.remove('d-none')
+    menu.classList.add('d-flex')
+  }
 };
 window.addEventListener('resize', onresize);
 
@@ -81,8 +72,8 @@ burger.addEventListener('click', () => {
         burgerOpen = false
     } else {
         burger.classList.add('open')
-        menu.classList.add('d-flex')
         menu.classList.remove('d-none')
+        menu.classList.add('d-flex')
         burgerOpen = true
     }
 })
