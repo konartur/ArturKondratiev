@@ -19,216 +19,264 @@
 </head>
 
 <body>
-    <!-- Header -->
+    <main class="content">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <!-- Top -->
+                <div class="header__top">
+                    <div class="row justify-content-between">
+                        <div class="col-md-12 col-lg-2  ">
+                            <div class="logo animate__fadeInDown"><img src="img/Logo.png" alt="Logo"></div>
+                        </div>
 
-    <header class="header">
-        <div class="container">
-            <!-- Top -->
-            <div class="header__top">
-                <div class="row justify-content-between">
-                    <div class="col-md-12 col-lg-2  ">
-                        <div class="logo animate__fadeInDown"><img src="img/Logo.png" alt="Logo"></div>
-                    </div>
-
-                    <div class=" col-md-12 col-lg-3 ">
-                        <div class="search">
-                            <input type="text" class="search__input" placeholder="Search">
-                            <a href="#" class="search__btn">Go</a>
+                        <div class=" col-md-12 col-lg-3 ">
+                            <div class="search">
+                                <input type="text" class="search__input" placeholder="Search">
+                                <a href="#" class="search__btn">Go</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- Bottom -->
+                <div class="header__nav">
+                    <div class="header__hamburger">
+                        <div class="hamburger__line"></div>
+                    </div>
+
+                    <ul class="nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="\">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./aboutUs.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./partners.html">Partners</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="./customers.html">Customers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./careers.html">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+
             </div>
-            <!-- Bottom -->
-            <div class="header__nav">
-                <div class="header__hamburger">
-                    <div class="hamburger__line"></div>
+        </header>
+
+        <!-- Tabs content -->
+        <section class="tabs">
+            <div class="container">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-first" role="tabpanel"
+                        aria-labelledby="nav-first-tab">
+                        <h2 class="tab__header">Fusce vitae nibh quis diam fermentum</h2>
+                        <p class="tab__subheader">Etiam adipiscing ultricies commodo.</p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-second" role="tabpanel" aria-labelledby="nav-second-tab">
+                        <h2 class="tab__header">Fusce vitae nibh quis diam fermentum</h2>
+                        <p class="tab__subheader">Etiam adipiscing ultricies commodo.</p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-third" role="tabpanel" aria-labelledby="nav-third-tab">
+                        <h2 class="tab__header">Fusce vitae nibh quis diam fermentum</h2>
+                        <p class="tab__subheader">Etiam adipiscing ultricies commodo.</p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-fourth" role="tabpanel" aria-labelledby="nav-fourth-tab">
+                        <h2 class="tab__header">Fusce vitae nibh quis diam fermentum</h2>
+                        <p class="tab__subheader">Etiam adipiscing ultricies commodo.</p>
+                    </div>
                 </div>
-
-                <ul class="nav">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="\">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./aboutUs.html">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="./partners.html">Partners</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link " href="./customers.html">Customers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="./projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="./careers.html">Careers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="./contact.html">Contact</a>
-                    </li>
-
-                </ul>
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-first-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-first" type="button" role="tab" aria-controls="nav-first"
+                            aria-selected="true"><span class="tab__number">1</span>Lorem ipsum
+                            dolop</button>
+                        <button class="nav-link" id="nav-second-tab" data-bs-toggle="tab" data-bs-target="#nav-second"
+                            type="button" role="tab" aria-controls="nav-second" aria-selected="false"><span
+                                class="tab__number">2</span>ultricies
+                            pellentesque</button>
+                        <button class="nav-link" id="nav-third-tab" data-bs-toggle="tab" data-bs-target="#nav-third"
+                            type="button" role="tab" aria-controls="nav-third" aria-selected="false"><span
+                                class="tab__number">3</span>Aliquam ipsum</button>
+                        <button class="nav-link" id="nav-fourth-tab" data-bs-toggle="tab" data-bs-target="#nav-fourth"
+                            type="button" role="tab" aria-controls="nav-fourth" aria-selected="false"><span
+                                class="tab__number">4</span>Nullam sed mauris
+                            ut</button>
+                    </div>
+                </nav>
             </div>
+        </section>
 
-        </div>
-    </header>
-
-    <!-- Tabs content -->
-
-    <section class="tabs">
-        <div class="container">
-            <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-first" role="tabpanel" aria-labelledby="nav-first-tab">
-                    <h2 class="tab__header">Fusce vitae nibh quis diam fermentum</h2>
-                    <p class="tab__subheader">Etiam adipiscing ultricies commodo.</p>
-                </div>
-                <div class="tab-pane fade" id="nav-second" role="tabpanel" aria-labelledby="nav-second-tab">
-                    <h2 class="tab__header">Fusce vitae nibh quis diam fermentum</h2>
-                    <p class="tab__subheader">Etiam adipiscing ultricies commodo.</p>
-                </div>
-                <div class="tab-pane fade" id="nav-third" role="tabpanel" aria-labelledby="nav-third-tab">
-                    <h2 class="tab__header">Fusce vitae nibh quis diam fermentum</h2>
-                    <p class="tab__subheader">Etiam adipiscing ultricies commodo.</p>
-                </div>
-                <div class="tab-pane fade" id="nav-fourth" role="tabpanel" aria-labelledby="nav-fourth-tab">
-                    <h2 class="tab__header">Fusce vitae nibh quis diam fermentum</h2>
-                    <p class="tab__subheader">Etiam adipiscing ultricies commodo.</p>
-                </div>
-            </div>
-            <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="nav-first-tab" data-bs-toggle="tab" data-bs-target="#nav-first"
-                        type="button" role="tab" aria-controls="nav-first" aria-selected="true"><span
-                            class="tab__number">1</span>Lorem ipsum
-                        dolop</button>
-                    <button class="nav-link" id="nav-second-tab" data-bs-toggle="tab" data-bs-target="#nav-second"
-                        type="button" role="tab" aria-controls="nav-second" aria-selected="false"><span
-                            class="tab__number">2</span>ultricies
-                        pellentesque</button>
-                    <button class="nav-link" id="nav-third-tab" data-bs-toggle="tab" data-bs-target="#nav-third"
-                        type="button" role="tab" aria-controls="nav-third" aria-selected="false"><span
-                            class="tab__number">3</span>Aliquam ipsum</button>
-                    <button class="nav-link" id="nav-fourth-tab" data-bs-toggle="tab" data-bs-target="#nav-fourth"
-                        type="button" role="tab" aria-controls="nav-fourth" aria-selected="false"><span
-                            class="tab__number">4</span>Nullam sed mauris
-                        ut</button>
-                </div>
-            </nav>
-        </div>
-    </section>
-
-    <!-- Main -->
-    <section class="main">
-        <div class="container">
-            <div class="main-top">
-                <div class="row">
-                    <div class="col-12 col-lg-6">
-                        <div class="main__card">
-                            <div class="row">
-                                <div class="col-6 col-sm-3 col-lg-4">
-                                    <div class="card__side">
-                                        <h3 class="card__title"><span class="card__marker"></span>About WhiteSquare</h3>
-                                        <div class="card__img"></div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-9 col-lg-8">
-                                    <div class="card__content">
-                                        <div class="card__border">
-
+        <!-- Main -->
+        <section class="main">
+            <div class="container">
+                <div class="main-top">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="main__card">
+                                <div class="row">
+                                    <div class="col-6 col-sm-3 col-lg-4">
+                                        <div class="card__side">
+                                            <h3 class="card__title"><span class="card__marker"></span>About WhiteSquare
+                                            </h3>
+                                            <div class="card__img"></div>
                                         </div>
-                                        <p class="card__text">
-                                            In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut
-                                            porta
-                                            nec,
-                                            ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean
-                                            augue
-                                            arcu,
-                                            convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac
-                                            massa
-                                            ornare
-                                            hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et
-                                            ut
-                                            erat.
-                                            Enean augue arcu, convallis ac ultrices.
-                                        </p>
-
-                                        <a href="#" class="card__btn">Read more</a>
                                     </div>
-                                </div>
+                                    <div class="col-12 col-sm-9 col-lg-8">
+                                        <div class="card__content">
+                                            <div class="card__border">
 
+                                            </div>
+                                            <p class="card__text">
+                                                In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit
+                                                ut
+                                                porta
+                                                nec,
+                                                ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean
+                                                augue
+                                                arcu,
+                                                convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus
+                                                ac
+                                                massa
+                                                ornare
+                                                hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius
+                                                et
+                                                ut
+                                                erat.
+                                                Enean augue arcu, convallis ac ultrices.
+                                            </p>
+
+                                            <a href="#" class="card__btn">Read more</a>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-12 col-lg-6">
-                        <div class="main__card">
-                            <div class="row">
-                                <div class="col-6 col-sm-3 col-lg-4">
-                                    <div class="card__side">
-                                        <h3 class="card__title"><span class="card__marker"></span>a word from OUR ceo
-                                        </h3>
-                                        <div class="card__img"></div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-9 col-lg-8">
-                                    <div class="card__content">
-                                        <div class="card__border">
-
+                        <div class="col-12 col-lg-6">
+                            <div class="main__card">
+                                <div class="row">
+                                    <div class="col-6 col-sm-3 col-lg-4">
+                                        <div class="card__side">
+                                            <h3 class="card__title"><span class="card__marker"></span>a word from OUR
+                                                ceo
+                                            </h3>
+                                            <div class="card__img"></div>
                                         </div>
-                                        <p class="card__text text-italic">
-                                            “In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut
-                                            porta
-                                            nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean
-                                            augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit
-                                            lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et
-                                            neque
-                                            accumsan varius et ut erat. Enean augue arcu, convallis ac.”
-                                        </p>
-
-                                        <div class="card__author">Yane Naumoski, CEO</div>
                                     </div>
-                                </div>
+                                    <div class="col-12 col-sm-9 col-lg-8">
+                                        <div class="card__content">
+                                            <div class="card__border">
 
+                                            </div>
+                                            <p class="card__text text-italic">
+                                                “In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit
+                                                ut
+                                                porta
+                                                nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc.
+                                                Aenean
+                                                augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec
+                                                hendrerit
+                                                lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et
+                                                neque
+                                                accumsan varius et ut erat. Enean augue arcu, convallis ac.”
+                                            </p>
+
+                                            <div class="card__author">Yane Naumoski, CEO</div>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="main-bottom ">
-                <div class="row d-flex-column d-md-flex-row">
-                    <div class="col-12 col-lg-4">
-                        <div class="main__card card-services">
-                            <div class="card__top">
-                                <h3 class="card__title"><span class="card__marker"></span>Services</h3>
-                                <div class="card__border"></div>
-                            </div>
-                            <div class="card__bottom">
-                                <p class="card__text">
-                                    In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec,
-                                    ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu,
-                                    convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa
-                                    ornare
-                                    hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat.
-                                    Enean augue arcu, convallis ac ultrices.
-                                </p>
-                                <a href="#" class="card__btn">Read more</a>
+                <div class="main-bottom ">
+                    <div class="row d-flex-column d-md-flex-row">
+                        <div class="col-12 col-lg-4">
+                            <div class="main__card card-services">
+                                <div class="card__top">
+                                    <h3 class="card__title"><span class="card__marker"></span>Services</h3>
+                                    <div class="card__border"></div>
+                                </div>
+                                <div class="card__bottom">
+                                    <p class="card__text">
+                                        In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta
+                                        nec,
+                                        ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue
+                                        arcu,
+                                        convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa
+                                        ornare
+                                        hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut
+                                        erat.
+                                        Enean augue arcu, convallis ac ultrices.
+                                    </p>
+                                    <a href="#" class="card__btn">Read more</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="main__card card-team">
-                            <div class="card__top">
-                                <h3 class="card__title"><span class="card__marker"></span>Our teams</h3>
-                                <div class="card__border"></div>
-                            </div>
-                            <div class="card__bottom">
-                                <div class="team-member">
+                        <div class="col-12 col-lg-4">
+                            <div class="main__card card-team">
+                                <div class="card__top">
+                                    <h3 class="card__title"><span class="card__marker"></span>Our teams</h3>
+                                    <div class="card__border"></div>
+                                </div>
+                                <div class="card__bottom">
+                                    <div class="team-member">
+                                        <div class="row mb-sm-4 mb-lg-2">
+                                            <div class="col-6 col-sm-3 col-lg-2">
+                                                <div class="team-member__img"></div>
+                                            </div>
+                                            <div class="col-12 col-sm-9 col-lg-10">
+                                                <div class="team-member__title">Lorem ipsum</div>
+                                                <div class="team-member__text">In ultricies pellentesque massa a porta.
+                                                    Aliquam
+                                                    ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi
+                                                    dui,
+                                                    sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate
+                                                    vitae,
+                                                    mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit
+                                                    sagittis
+                                                    lacus tempor. Vivamus et dui et neque accumsan varius et ut erat.
+                                                    Enean
+                                                    augue arcu, convallis ac ultrices. </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-sm-4 mb-lg-2">
+                                            <div class="col-6 col-sm-3 col-lg-2">
+                                                <div class="team-member__img"></div>
+                                            </div>
+                                            <div class="col-12 col-sm-9 col-lg-10"">
+                                            <div class=" team-member__title">Lorem ipsum</div>
+                                            <div class="team-member__text">In ultricies pellentesque massa a porta.
+                                                Aliquam
+                                                ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi
+                                                dui,
+                                                sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate
+                                                vitae,
+                                                mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit
+                                                sagittis
+                                                lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean
+                                                augue arcu, convallis ac ultrices. </div>
+                                        </div>
+                                    </div>
                                     <div class="row mb-sm-4 mb-lg-2">
                                         <div class="col-6 col-sm-3 col-lg-2">
                                             <div class="team-member__img"></div>
@@ -247,119 +295,84 @@
                                                 augue arcu, convallis ac ultrices. </div>
                                         </div>
                                     </div>
-                                    <div class="row mb-sm-4 mb-lg-2">
-                                        <div class="col-6 col-sm-3 col-lg-2">
-                                            <div class="team-member__img"></div>
-                                        </div>
-                                        <div class="col-12 col-sm-9 col-lg-10"">
-                                            <div class=" team-member__title">Lorem ipsum</div>
-                                        <div class="team-member__text">In ultricies pellentesque massa a porta.
-                                            Aliquam
-                                            ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi
-                                            dui,
-                                            sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate
-                                            vitae,
-                                            mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit
-                                            sagittis
-                                            lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean
-                                            augue arcu, convallis ac ultrices. </div>
-                                    </div>
-                                </div>
-                                <div class="row mb-sm-4 mb-lg-2">
-                                    <div class="col-6 col-sm-3 col-lg-2">
-                                        <div class="team-member__img"></div>
-                                    </div>
-                                    <div class="col-12 col-sm-9 col-lg-10">
-                                        <div class="team-member__title">Lorem ipsum</div>
-                                        <div class="team-member__text">In ultricies pellentesque massa a porta.
-                                            Aliquam
-                                            ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi
-                                            dui,
-                                            sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate
-                                            vitae,
-                                            mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit
-                                            sagittis
-                                            lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean
-                                            augue arcu, convallis ac ultrices. </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="main__card card-support">
-                        <div class="card__top">
-                            <h3 class="card__title"><span class="card__marker"></span>27/7/365 support</h3>
-                            <div class="card__border"></div>
-                        </div>
-                        <div class="card__bottom">
-                            <p class="card__text">
-                                In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec,
-                                ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu,
-                                convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa
-                                ornare
-                                hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat.
-                                Enean augue arcu, convallis ac ultrices.
-                            </p>
-                            <a href="#" class="card__btn">Read more</a>
+                    <div class="col-12 col-lg-4">
+                        <div class="main__card card-support">
+                            <div class="card__top">
+                                <h3 class="card__title"><span class="card__marker"></span>27/7/365 support</h3>
+                                <div class="card__border"></div>
+                            </div>
+                            <div class="card__bottom">
+                                <p class="card__text">
+                                    In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec,
+                                    ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu,
+                                    convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa
+                                    ornare
+                                    hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat.
+                                    Enean augue arcu, convallis ac ultrices.
+                                </p>
+                                <a href="#" class="card__btn">Read more</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="main__clients">
+            <div class="main__clients">
 
-            <div class="clients__top d-flex justify-content-between">
-                <h3 class="client__title"><span class="title-marker"></span>Our clients</h3>
-                <div class="client__border"></div>
-            </div>
+                <div class="clients__top d-flex justify-content-between">
+                    <h3 class="client__title"><span class="title-marker"></span>Our clients</h3>
+                    <div class="client__border"></div>
+                </div>
 
-            <div class="clients__swiper">
-                <div class="swiper-container">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img src="./img/clients/client1.png" class="img" alt="first client">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/clients/client2.png" class="img" alt="second client">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/clients/client3.png" class="img" alt="third client">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/clients/client4.png" class="img" alt="fourth client">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/clients/client5.png" class="img" alt="fifth client">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/clients/client6.png" class="img" alt="sixth client">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/clients/client7.png" class="img" alt="seventh client">
-                        </div>
+                <div class="clients__swiper">
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="./img/clients/client1.png" class="img" alt="first client">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/clients/client2.png" class="img" alt="second client">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/clients/client3.png" class="img" alt="third client">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/clients/client4.png" class="img" alt="fourth client">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/clients/client5.png" class="img" alt="fifth client">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/clients/client6.png" class="img" alt="sixth client">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/clients/client7.png" class="img" alt="seventh client">
+                            </div>
 
-                        ...
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
+                            ...
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
 
-                    <!-- If we need navigation buttons -->
-                    <!-- <div class="swiper-button-prev"></div>
+                        <!-- If we need navigation buttons -->
+                        <!-- <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div> -->
 
-                    <!-- If we need scrollbar -->
-                    <!-- <div class="swiper-scrollbar"></div> -->
+                        <!-- If we need scrollbar -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
+                    </div>
                 </div>
-            </div>
 
-        </div>
-        </div>
-    </section>
+            </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
