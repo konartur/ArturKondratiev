@@ -148,6 +148,31 @@ body .container {
     color: #fff;
 }
 
+/* Somecontent blocks */
+
+.somecontent {
+    margin-top: 45px;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--color-middle-gray);
+}
+
+.somecontent__title {
+    color: var(--color-dark-gray);
+    font-family: var(--font-oswald);
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.somecontent__text {
+    color: #fff;
+    font-family: var(--font-tahoma);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+
 /* Tabs */
 .tabs {
     margin-top: 30px;
