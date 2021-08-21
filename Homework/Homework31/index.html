@@ -16,44 +16,6 @@
             max-width: 400px;
         }
 
-        .operators {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .operators button {
-            padding: 5 10px;
-            background-color: lightcoral;
-            color: #fff;
-            font-size: 18px;
-            font-weight: 500;
-            transition: all 0.2s ease-in-out;
-        }
-
-        .operators button:hover {
-            color: green;
-            opacity: 0.7;
-        }
-
-        .inputs {
-            margin-top: 15px;
-            display: flex;
-            justify-content: space-around;
-            background-color: honeydew;
-            font-size: 16px;
-            font-weight: 400;
-        }
-
-        .inputs input {
-            padding: 5px 15px;
-            border: 1px solid #fff;
-        }
-
-        .inputs input:active {
-            border: 1px solid green;
-        }
-
         .out {
             margin-top: 20px;
             border: 3px solid #999;
@@ -68,23 +30,68 @@
             font-size: 30px;
             font-weight: 500;
         }
+
+        .operators {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .operators button {
+            padding: 5px 15px;
+            background-color: #55658c;
+            border: 3px solid #fff;
+            color: #fff;
+            font-size: 25px;
+            font-weight: 600;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .operators button:hover {
+            color: green;
+            opacity: 0.7;
+        }
+
+        .inputs {
+            margin-top: 15px;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .inputs input {
+            padding: 5px 15px;
+            margin-bottom: 15px;
+            border: 3px solid #999;
+            background-color: #fff;
+        }
+
+        .inputs input:active,
+        .inputs input:target,
+        .inputs input:focus {
+            border: 3px solid green;
+        }
     </style>
 </head>
 
 <body>
     <div class="calculator">
         <div class="out">
-            <div class="result" id="result">sadasd</div>
+            <div class="result" id="result">Результат</div>
+        </div>
+        <div class="inputs">
+            <label for="number1">Введите первое значение:</label>
+            <input type="text" id="number1">
+            <br>
+            <label for="number2">Введите второе значение:</label>
+            <input type="text" id="number2">
         </div>
         <div class="operators">
             <button id="btn__plus">+</button>
             <button id="btn__minus">-</button>
             <button id="btn__multiply">*</button>
             <button id="btn__division">/</button>
-        </div>
-        <div class="inputs">
-            <input type="text" class="number1">
-            <input type="text" class="number2">
         </div>
 
     </div>
@@ -94,21 +101,48 @@
     let btnMinus = document.getElementById('btn__minus');
     let btnMultiply = document.getElementById('btn__multiply');
     let btnDivision = document.getElementById('btn__division');
-    let number1 = document.getElementById('number1').value;
-    let number2 = document.getElementById('number2').value;
-    let result;
+    let result = document.getElementById('result');
 
-    switch (operationChild) {
-        case '+': result = Number(number1) + Number(number2);
-            break;
-        case '-': result = Number(number1) - Number(number2);
-            break;
-        case '*': result = Number(number1) * Number(number2);
-            break;
-        case '/': result = Number(number1) / Number(number2);
-            break;
+    let out;
+    function checkNumber(operationChild) {
+        let number1 = document.getElementById('number1').value;
+        let number2 = document.getElementById('number2').value;
+
+        switch (operationChild) {
+            case '+': out = Number(number1) + Number(number2);
+                break;
+            case '-': out = Number(number1) - Number(number2);
+                break;
+            case '*': out = Number(number1) * Number(number2);
+                break;
+            case '/': out = Number(number1) / Number(number2);
+                break;
+            default: out = 'Такого знаения нет!';
+        }
+        console.log(out);
+        result.innerHTML = out;
     }
 
+    function clickOnPlus() {
+        checkNumber('+');
+    }
+    function clickOnMinus() {
+        checkNumber('-');
+    }
+    function clickOnMultiply() {
+        checkNumber('*');
+    }
+    function clickOnDivision() {
+        checkNumber('/');
+    }
+
+    btnPlus.addEventListener('click', clickOnPlus);
+
+    btnMinus.addEventListener('click', clickOnMinus);
+
+    btnMultiply.addEventListener('click', clickOnMultiply);
+
+    btnDivision.addEventListener('click', clickOnDivision);
 </script>
 
 </html>
