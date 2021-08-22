@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <div class="container">
+                <form action="" class="form">
+                    <label>From: <input type="text" class="from field"></label>
+                    <label>Введите пароль: <input type="password" class="password field"></label>
+                    <label>Повторите пароль: <input type="password" class="passwordRepeat field"></label>
+                    <label for="position">Ваша должность: </label>
+                    <select name="position" class="position field" id="position">
+                        <option value=""></option>
+                        <option value="main developrt">Main Developer</option>
+                        <option value="junior">Junior</option>
+                        <option value="manager">Manager</option>
+                    </select>
+                    <label for="message">Message:</label>
+                    <textarea name="text" id="message" cols="30" rows="10" class="textarea field"></textarea>
+                    <input type="submit" value="Validate" class="validateBtn">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

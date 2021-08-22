@@ -21,4 +21,12 @@ box-sizing: border-box;
 .form textarea,
 .form input {
     margin-top: 10px;
+    border: 1px solid black ;
+}
+.form input:required:valid {
+    border-color: green;
+  }
+
+.error {
+    color: red;
 }
