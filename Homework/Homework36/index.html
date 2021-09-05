@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal window HW36</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./vendore/fontawesome/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <main class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-2">
+                        <div class="header__logo">
+                            <a href="/"><img src="./img/logo5.png" alt="cup of coffee logo"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-8">
+                        <nav class="header__nav d-flex justify-content-center">
+                            <div class="nav__social">
+                                <p class="social-instagram"><a href="#"><i class="fab fa-instagram"></i></a></p>
+                                <p class="social-youtube"><a href="#"><i class="fab fa-youtube"></i></a></p>
+                                <p class="social-facebook"><a href="#"><i class="fab fa-facebook-square"></i></a>
+                                </p>
+                            </div>
+
+                            <div class="nav__contacts">
+                                <ul class="contacts__list">
+                                    <li class="list__item"><i class="fas fa-plus"></i>38 (099) - 999 - 99 - 99</li>
+                                    <li class="list__item"><i class="fas fa-plus"></i>38 (099) - 999 - 99 - 99</li>
+                                    <li class="list__item"><i class="fas fa-plus"></i>38 (099) - 999 - 99 - 99</li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div class="col-xl-2">
+                        <button class="header__btn" rel="modal:open">I want a coffee!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal">
+                <span class="modal__span" rel="modal:close">x</span>
+                <form action="POST" class="modal__form">
+                    <input type="text" class="form__name" placeholder="Your name" autofocus />
+                    <input type="text" class="form__email" placeholder="E-mail" />
+                    <input type="textarea" class="form__message" placeholder="comment" />
+                    <input type="submit" class="form__button" value="Order" />
+                </form>
+            </div>
+        </header>
+
+    </main>
+</body>
+
+</html>
