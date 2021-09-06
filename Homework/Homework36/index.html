@@ -53,18 +53,22 @@
                     </div>
                 </div>
             </div>
-            <div class="modal">
-                <span class="modal__span" rel="modal:close">x</span>
-                <form action="POST" class="modal__form">
-                    <input type="text" class="form__name" placeholder="Your name" autofocus />
-                    <input type="text" class="form__email" placeholder="E-mail" />
-                    <input type="textarea" class="form__message" placeholder="comment" />
-                    <input type="submit" class="form__button" value="Order" />
-                </form>
-            </div>
         </header>
-
     </main>
+
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__wrapper">
+            <span class="modal__span" rel="modal:close">x</span>
+            <form action="POST" class="modal__form">
+                <input type="text" class="form__name" placeholder="Your name" autofocus />
+                <input type="text" class="form__email" placeholder="E-mail" />
+                <button type="button" class="modal__comment-btn">Add comment</button>
+                <input type="textarea" class="form__message" placeholder="comment" />
+                <input type="submit" class="form__button" value="Order" />
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
