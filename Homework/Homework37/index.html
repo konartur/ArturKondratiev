@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework37</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1>1</h1>
+        <h2>2</h2>
+        <h3>3</h3>
+        <h4>4</h4>
+        <h5>5</h5>
+        <h6>6</h6>
+    </div>
+    <script>
+        // Поиск по заголовкам
+        let main = document.querySelector('.main').innerHTML;
+        let pattern = /<h[1-6]>.+/g;
+        console.log(main.match(pattern));
+
+        // Redirect
+        let str = `https://complex-dent.com.ua/uslugi/anesteziya-v-stomatologii/infiltratsionnaya-anesteziya 
+        https://complex-dent.com.ua/uslugi/anesteziya-v-stomatologii/mestnaya-anesteziya
+        https://complex-dent.com.ua/uslugi/anesteziya-v-stomatologii/proba-na-anesteziyu-v-stomatologii
+        https://complex-dent.com.ua/uslugi/anesteziya-v-stomatologii/proba-na-anesteziyu-v-stomatologii
+        https://complex-dent.com.ua/uslugi/anesteziya-v-stomatologii/proba-na-anesteziyu-v-stomatologii
+        https://complex-dent.com.ua/uslugi/anesteziya-v-stomatologii/provodnikovaya-anesteziya
+        https://complex-dent.com.ua/uslugi/anesteziya-v-stomatologii/torusalnaya-anesteziya
+        https://complex-dent.com.ua/uslugi/anesteziya-v-stomatologii/torusalnaya-anesteziya
+        https://complex-dent.com.ua/uslugi/anesteziya-v-stomatologii/torusalnaya-anesteziya
+        https://complex-dent.com.ua/uslugi/detskaya-stomatologiya`;
+
+        let domen = /https:\/\/complex-dent.com.ua/g;
+        let str2 = str.replace(domen, ' ');
+        console.log(str2);
+    </script>
+</body>
+
+</html>
